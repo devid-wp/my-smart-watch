@@ -1,0 +1,1 @@
+"""ar-hud camera package: реализации ICameraSource."""

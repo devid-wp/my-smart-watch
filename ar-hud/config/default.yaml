@@ -1,0 +1,39 @@
+# ar-hud default config
+# Изменения в этом файле не должны требовать правок кода.
+
+camera:
+  type: file           # webcam | file
+  source: assets/demo.mp4
+  backend: -1
+
+window_name: AR-HUD
+
+modules:
+  - type: clock
+    name: clock_topright
+    enabled: true
+    params:
+      position: [1100, 30]
+      color: [0, 255, 0]
+
+  - type: system_monitor
+    name: sysmon
+    enabled: true
+    params:
+      position: [20, 30]
+      update_interval_sec: 1.0
+
+  - type: weather
+    name: weather_widget
+    enabled: false   # выключено: требует WEATHER_API_KEY в окружении
+    params:
+      api_key_env: WEATHER_API_KEY
+      city: Moscow
+      refresh_interval_sec: 600
+      position: [20, 200]
+
+  - type: face_detection
+    name: face_overlay
+    enabled: false   # выключено: включается в Phase 4
+    params:
+      model: haarcascade

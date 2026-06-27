@@ -1,0 +1,1 @@
+"""ar-hud core package: интерфейсы, Pipeline, Clock, реестр модулей."""

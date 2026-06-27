@@ -1,0 +1,1 @@
+"""ar-hud config package: схема + загрузчик."""
